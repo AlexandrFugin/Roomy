@@ -21,16 +21,27 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__wrapper">
+        <div class="header__burger-menu" id="burger-menu">
+          <span class="header__burger-line header__line-first"></span>
+          <span class="header__burger-line header__line-second"></span>
+          <span class="header__burger-line header__line-thurd"></span>
+        </div>
+        <div class="header__menu-close" id="close-menu">
+          <span class="header__menu-close-line"></span>
+          <span class="header__menu-close-line"></span>
+        </div>
         <div class="header__logo">Roomy</div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item"><a href="./index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="#" class="header__link">About</a></li>
-            <li class="header__item"><a href="./profile.html" class="header__link">My profile</a></li>
-            <li class="header__item"><a href="./rooms.html" class="header__link">Rooms</a></li>
-            <li class="header__item"><a href="#" class="header__link">Выход</a></li>
-          </ul>
-        </nav>
+        <div class="header__menu-background">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item"><a href="./index.html" class="header__link">Home</a></li>
+              <li class="header__item"><a href="#" class="header__link">About</a></li>
+              <li class="header__item"><a href="./profile.html" class="header__link">My profile</a></li>
+              <li class="header__item"><a href="./rooms.html" class="header__link">Rooms</a></li>
+              <li class="header__item"><a href="#" class="header__link">Выход</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -42,12 +53,12 @@
           <img src="./assets/svg/photo_camera.svg" alt="avatar" class="profile__avatar">
           <div class="profile__pers-data">
             <div class="profile__name">Имя пользователя</div>
-            <div class="profile__type">Мои типы:</div>
+            <div class="profile__type subtitle">Мои типы:</div>
             <div class="profile__type-wrapper profile__type-wrapper_mb24">
               <div class="profile__tag profile__tag_green">Text</div>
               <div class="profile__tag profile__tag_orange">Text</div>
             </div>
-            <div class="profile__type">Я ищу:</div>
+            <div class="profile__type subtitle">Я ищу:</div>
             <div class="profile__type-wrapper">
               <div class="profile__tag profile__tag_blue">Text</div>
               <div class="profile__tag profile__tag_red">Text</div>
@@ -55,7 +66,7 @@
           </div>
         </div>
 
-        <div class="profile__type">Интересы:</div>
+        <div class="profile__type subtitle">Интересы:</div>
         <div class="profile__type-wrapper profile__type-wrapper_wrap profile__type-wrapper_mb24">
           <div class="profile__tag profile__tag_purple">Text</div>
           <div class="profile__tag profile__tag_purple">Text</div>
@@ -73,11 +84,14 @@
           <div class="profile__tag profile__tag_purple">Text</div>
           <div class="profile__tag profile__tag_purple">Text</div>
         </div>
-        <div class="profile__type">Описание:</div>
+        <div class="profile__type subtitle">Описание:</div>
         <div class="profile__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec fermentum et donec morbi proin risus et. Iaculis risus, convallis ut lacus, tellus, ac. Vulputate sed porttitor laoreet dictumst risus. Molestie donec cursus eget integer. Consectetur mauris suspendisse interdum auctor mauris mollis tristique. Ornare adipiscing orci consequat molestie vulputate urna. Tellus vitae tortor rutrum fames cras aliquet vitae, id lectus. Faucibus faucibus tincidunt mollis leo suspendisse elit ac. Sociis sapien proin mi dignissim. Donec facilisi venenatis bibendum dui. Sem magna nibh nisl penatibus vestibulum molestie.</div>
       </div>
 
     </div>
   </main>
+
+  <script src="./sctipt.js"></script>
+  
 </body>
 </html>

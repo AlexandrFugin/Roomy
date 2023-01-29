@@ -18,16 +18,27 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__wrapper">
+        <div class="header__burger-menu" id="burger-menu">
+          <span class="header__burger-line header__line-first"></span>
+          <span class="header__burger-line header__line-second"></span>
+          <span class="header__burger-line header__line-thurd"></span>
+        </div>
+        <div class="header__menu-close" id="close-menu">
+          <span class="header__menu-close-line"></span>
+          <span class="header__menu-close-line"></span>
+        </div>
         <div class="header__logo">Roomy</div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item"><a href="./index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="#" class="header__link">About</a></li>
-            <li class="header__item"><a href="./profile.html" class="header__link">My profile</a></li>
-            <li class="header__item"><a href="./rooms.html" class="header__link">Rooms</a></li>
-            <li class="header__item"><a href="#" class="header__link">Выход</a></li>
-          </ul>
-        </nav>
+        <div class="header__menu-background">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item"><a href="./index.html" class="header__link">Home</a></li>
+              <li class="header__item"><a href="#" class="header__link">About</a></li>
+              <li class="header__item"><a href="./profile.html" class="header__link">My profile</a></li>
+              <li class="header__item"><a href="./rooms.html" class="header__link">Rooms</a></li>
+              <li class="header__item"><a href="#" class="header__link">Выход</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -45,7 +56,7 @@
             <a href="#" class="rooms__link"><button class="rooms__btn rooms__btn_admins">Администраторы</button></a>
           </div>
         </div>
-        <div class="profile__type">Описание:</div>
+        <div class="profile__type subtitle">Описание:</div>
         <div class="profile__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, sed tincidunt enim sed morbi blandit sed consequat. Magna lacus imperdiet vitae ac ut. Et placerat etiam nullam orci ac pharetra mattis. Quam maecenas amet consequat volutpat mattis nulla viverra. Amet massa commodo hendrerit eget massa ornare. Semper sed congue neque libero vitae amet tristique hendrerit. At dignissim sit integer habitasse mattis arcu ipsum mauris. Ac malesuada porta et ultrices ornare est sapien. Et, dictum massa sapien et condimentum sapien, id tortor. Malesuada mauris, placerat elementum amet viverra ut fermentum dictum. Elementum non vitae, amet nunc gravida pretium in aliquam lectus.</div>
         <hr class="line line_mb18">
         <div class="rooms__type-title">Типы пользователей:</div>
@@ -78,5 +89,8 @@
       </div>
     </div>
   </main>
+
+  <script src="./sctipt.js"></script>
+  
 </body>
 </html>

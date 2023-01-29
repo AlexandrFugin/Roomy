@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .overflove-hidden {
   overflow-y: hidden;
   scrollbar-gutter: stable;
@@ -42,33 +41,31 @@
 
 .header {
   background: #673AB7;
-  font-family: "Montserrat";
-  font-style: normal;
 }
 .header__wrapper {
   padding: 12px 16px 5px 16px;
   display: flex;
   justify-content: flex-start;
 }
-.header__wrapper_small {
-  justify-content: start;
-  align-items: center;
-  padding: 24px 0px 18px 16px;
-}
 .header__logo {
   margin: auto 0;
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  line-height: 106%;
+  line-height: 1.06;
+  letter-spacing: 0;
   color: #FFFFFF;
 }
 .header__title {
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 0.86;
-  text-align: center;
   letter-spacing: 0.18px;
   color: #FFFFFF;
+  text-align: center;
 }
 .header__list {
   display: flex;
@@ -79,6 +76,8 @@
 }
 .header__link {
   cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 0.86;
@@ -126,20 +125,16 @@
 }
 
 .card__title {
+  padding: 4px 16px;
+  background: #673AB7;
+  border-radius: 4px 4px 0px 0px;
   font-family: "Montserrat";
   font-style: normal;
-  padding: 4px 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.1px;
   color: #FFFFFF;
-  background: #673AB7;
-  border-radius: 4px 4px 0px 0px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .card__foto {
   width: 100%;
@@ -205,10 +200,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  text-align: center;
   letter-spacing: 1.25px;
-  text-transform: capitalize;
   color: #FFFFFF;
+  text-transform: capitalize;
+}
+.card__btn:hover {
+  background: #592fa4;
 }
 
 .profile__wrapper {
@@ -237,17 +234,10 @@
   font-size: 28px;
   line-height: 0.86;
   letter-spacing: 0.18px;
-  color: #000000;
+  color: #212121;
 }
 .profile__type {
   margin-bottom: 16px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.15px;
-  color: #000000;
 }
 .profile__type-wrapper {
   display: flex;
@@ -287,8 +277,9 @@
   right: 5px;
   color: white;
   border-radius: 50%;
-  font-family: "Roboto Mono";
+  font-family: "Roboto";
   font-style: normal;
+  font-weight: 400;
   font-size: 9px;
   line-height: 0.89;
   letter-spacing: 0.25px;
@@ -342,7 +333,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  color: #000000;
+  color: #212121;
 }
 
 .rooms__wrapper {
@@ -366,6 +357,8 @@
 .rooms__name {
   margin-bottom: 24px;
   font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
   font-size: 28px;
   line-height: 0.86;
   letter-spacing: 0.18px;
@@ -381,13 +374,14 @@
   border: 0;
   border-radius: 2px;
   font-family: "Montserrat";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  text-align: center;
   letter-spacing: 1.25px;
-  text-transform: capitalize;
   color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
 }
 .rooms__btn::after {
   content: "";
@@ -406,6 +400,7 @@
 }
 .rooms__type-title {
   font-family: "Montserrat";
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -415,6 +410,7 @@
 .rooms__type-name {
   margin-bottom: 4px;
   font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
@@ -492,21 +488,19 @@
   margin-bottom: 8px;
   line-height: 1.5;
   letter-spacing: 0.15px;
-  color: #000000;
+  color: #212121;
 }
 .users__label_user {
   margin-bottom: 5px;
 }
 .users__input {
   height: 44px;
+  padding-left: 8px;
   border: 1px solid #9F9F9F;
   border-radius: 4px;
 }
 .users__input::placeholder {
-  padding-left: 8px;
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -527,12 +521,10 @@
   border: none;
   border-radius: 2px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1;
-  text-align: center;
   letter-spacing: 1.25px;
-  text-transform: capitalize;
   color: #FFFFFF;
+  text-transform: capitalize;
 }
 .users__avatar {
   margin-right: 16px;
@@ -541,91 +533,88 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.15px;
-  color: #000000;
-}
-
-.control-group {
-  display: inline-block;
-  vertical-align: top;
-  background: #fff;
-  text-align: left;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 200px;
-  height: 210px;
-  margin: 10px;
+  color: #212121;
 }
 
 .control {
   display: block;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
+  padding-left: 24px;
+  margin-bottom: 26px;
   cursor: pointer;
-  font-size: 18px;
+  letter-spacing: 0.15px;
+}
+.control_all {
+  top: 10px;
+  right: 46px;
+  margin: 0;
 }
 .control input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.control input:checked ~ .control__indicator {
-  background: #2aa1c0;
+.control input:checked ~ .control-indicator {
+  background: #673AB7;
 }
-.control input:checked ~ .control__indicator:after {
+.control input:checked ~ .control-indicator:after {
   display: block;
 }
-.control input:disabled ~ .control__indicator {
+.control input:disabled ~ .control-indicator {
   background: #e6e6e6;
   opacity: 0.6;
   pointer-events: none;
 }
 
-.control__indicator {
+.control-indicator {
   position: absolute;
   top: 2px;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   background: #e6e6e6;
 }
-.control__indicator:after {
+.control-indicator_all {
+  top: -4px;
+  left: 160px;
+}
+.control-indicator:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.control:hover input ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-  background: #ccc;
+.control:hover input ~ .control-indicator {
+  background: #d3d0d0;
 }
 
-.control:hover input:not([disabled]):checked ~ .control__indicator,
-.control input:checked:focus ~ .control__indicator {
-  background: #0e647d;
+.control:hover input:not([disabled]):checked ~ .control-indicator,
+.control input:checked:focus ~ .control-indicator {
+  background: #562da1;
 }
 
-.control--checkbox .control__indicator:after {
-  left: 8px;
-  top: 4px;
-  width: 3px;
-  height: 8px;
+.control-checkbox .control-indicator:after {
+  left: 6px;
+  top: 0;
+  width: 8px;
+  height: 14px;
   border: solid #fff;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg);
-}
-.control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b;
 }
 
 @media screen and (max-width: 820px) {
-  /* CSS-стили */
   .header__link {
     font-size: 20px;
   }
+  .users__form-wrapper {
+    flex-direction: column;
+  }
+  .control_all {
+    right: 24px;
+  }
 }
 @media screen and (max-width: 660px) {
-  /* CSS-стили */
   .header__wrapper {
     justify-content: center;
   }
@@ -646,6 +635,11 @@
     margin-right: 0;
     box-sizing: border-box;
   }
+  .users__input_user {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
   .users__button {
     align-self: flex-end;
   }
@@ -654,7 +648,6 @@
   }
 }
 @media screen and (max-width: 540px) {
-  /* CSS-стили */
   .rooms__personal-wrapper {
     flex-direction: column;
     margin-bottom: 0;
@@ -664,7 +657,6 @@
   }
 }
 @media screen and (max-width: 360px) {
-  /* CSS-стили */
   .header__menu-background_active {
     position: fixed;
     width: 100%;
@@ -678,6 +670,9 @@
   .header__wrapper {
     justify-content: start;
     position: relative;
+  }
+  .header__wrapper_small {
+    justify-content: flex-start;
   }
   .header__logo {
     font-weight: 500;
@@ -743,6 +738,17 @@
     line-height: 1.5;
     letter-spacing: 0.15px;
   }
+  .header__arrow {
+    margin-right: 18px;
+    width: 24px;
+    height: 24px;
+  }
+  .header__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.15px;
+  }
   .profile__avatar {
     margin: 0 auto;
   }
@@ -767,9 +773,6 @@
     font-size: 20px;
     letter-spacing: 0.15px;
   }
-  .line_mb24 {
-    display: none;
-  }
   .rooms__type-title {
     margin-bottom: 10px;
     font-weight: 400;
@@ -785,28 +788,11 @@
     height: 8px;
     margin-bottom: 8px;
   }
+  .line_mb24 {
+    display: none;
+  }
   .line_mb18 {
     margin-top: 17px;
-  }
-  .header__wrapper_small {
-    justify-content: flex-start;
-  }
-  .header__arrow {
-    margin-right: 18px;
-    width: 24px;
-    height: 24px;
-  }
-  .header__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.15px;
-  }
-  .subtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #000000;
   }
   .users__label {
     font-weight: 500;
@@ -824,17 +810,45 @@
     line-height: 1.43;
     letter-spacing: 0.25px;
   }
-  .subtitle__mobile {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.1px;
-    color: #000000;
-  }
   .users__username {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.1px;
+  }
+  .control_all {
+    top: 3px;
+    right: 34px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  .control-indicator {
+    height: 18px;
+    width: 18px;
+  }
+  .control-indicator_all {
+    top: -1px;
+    right: 0;
+    margin-left: 180px;
+  }
+  .control-checkbox .control-indicator:after {
+    top: 1px;
+    width: 4px;
+    height: 10px;
+    border-width: 0 2px 2px 0;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212121;
+  }
+  .subtitle__mobile {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.1px;
+    color: #212121;
   }
 }
 
