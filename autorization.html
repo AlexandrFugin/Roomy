@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__burger-menu" id="burger-menu">
+            <span class="header__burger-line header__line-first"></span>
+            <span class="header__burger-line header__line-second"></span>
+            <span class="header__burger-line header__line-thurd"></span>
+          </div>
+          <div class="header__menu-close" id="close-menu">
+            <span class="header__menu-close-line"></span>
+            <span class="header__menu-close-line"></span>
+          </div>
+          <div class="header__logo">Roomy</div>
+          <div class="header__menu-background">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item"><a href="./profile.html" class="header__link">Вход</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="autorization">
+      <h2 class="subtitle subtitle_mb14">Вход</h2>
+      <form action="" class="users__form">
+        <label for="push-message" class="users__label">Введите логин</label>
+        <input type="text" class="users__input users__input_push" name="push-message" placeholder="Логин">
+        <label for="search-user" class="users__label users__label_user">Введите пароль</label>
+        <input type="text" class="users__input users__input_user" name="search-user" placeholder="Пароль">
+        <button class="autorization__button users__button">Войти</button>
+      </form>
+    </main>
+
+    <script src="./sctipt.js"></script>
+
+  </body>
+</html>

@@ -162,6 +162,7 @@ $font-style: normal;
   &__title {
     padding: 4px 16px;
     background: $purple;
+    opacity: 0.5;
     border-radius: 4px 4px 0px 0px;
 
     @include text($font-main, $font-style, 500, $fs-small, 1.71, 0.1px, $white);
@@ -172,20 +173,20 @@ $font-style: normal;
   }
 
   &__description {
-    padding: 6px 16px;
+    padding: 8px 16px;
 
     @include text($font-main, $font-style, 500, $fs-small, 1.5, 0.1px, $black);
   }
 
   &__groups {
-    padding: 6px 0 18px 0;
+    padding: 6px 0 8px 0;
 
     @include text($font-secondary, $font-style, 400, $fs-small, 1.43, 0.25px, $black);
 
     &__pers {
       position: relative;
       padding: 5px 16px 0 48px;
-      margin-bottom: 14px;
+      margin-bottom: 8px;
 
       &::before {
         content: url(./assets/svg/icon_groups.svg);
@@ -220,7 +221,7 @@ $font-style: normal;
     cursor: pointer;
     display: block;
     margin: auto;
-    padding: 10px 16px;
+    padding: 10px 61px;
     background: $purple;
     border: none;
     border-radius: 2px;
@@ -396,6 +397,7 @@ $font-style: normal;
     cursor: pointer;
     display: block;
     padding: 10px 48px 10px 16px;
+    width: 228px;
     position: relative;
     margin-bottom: 16px;
     background: $purple;
@@ -409,12 +411,13 @@ $font-style: normal;
     &::after {
       content: '';
       position: absolute;
-      right: 17px;
+      right: 20px;
       margin: 0 auto;
     }
     &_group {
       &::after {
         content: url(./assets/svg/icon_groups-white.svg);
+        right: 31px;
       }
     }
     &_admins {
@@ -495,18 +498,25 @@ $font-style: normal;
 
   &__form-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
     flex-wrap: wrap;
   }
 
   &__row {
     display: flex;
     align-items: center;
+    align-self: flex-end;
     justify-content: space-between;
+    gap: 16px;
     flex-wrap: wrap;
 
     &_mb8 {
       margin-bottom: 4px;
+    }
+
+    &_mb10 {
+      margin-bottom: 10px;
     }
   }
 
@@ -518,31 +528,32 @@ $font-style: normal;
     color: $black-brown;
 
     &_user {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
   }
 
   &__input {
-    height: 44px;
-    padding-left: 8px;
+    height: 32px;
+    padding-left: 16px;
     border: 1px solid #9F9F9F;
     border-radius: 4px;
 
     &::placeholder {
       font-family: $font-secondary;
-      font-size: $fs-text;
-      line-height: 1.5;
-      letter-spacing: 0.5px;
+      font-size: $fs-small;
+      line-height: 1.43;
+      letter-spacing: 0.25px;
       color: #9F9F9F;
     }
 
     &_push {
-      margin-bottom: 16px;
+      margin-bottom: 22px;
     }
     &_user {
-      width: 478px;
+      // width: 478px;
       height: 32px;
-      margin-right: 24px;
+      margin-bottom: 15px;
+      // margin-right: 24px;
     }
   }
 
@@ -573,6 +584,23 @@ $font-style: normal;
 }
 // ------------------------END SECTION USERS STYLE-----------------------------//
 
+// ------------------------START SECTION AUTORIZATION STYLE-----------------------------//
+.autorization {
+  @include text($font-main, $font-style, 400, $fs-text, null, null, null);
+
+  max-width: 484px;
+  margin: 0 auto;
+  padding: 0 16px;
+  transform: translateY(77%);
+
+  &__button {
+    width: 89px;
+    margin-left: auto;
+  }
+}
+
+// ------------------------END SECTION AUTORIZATION STYLE-----------------------------//
+
 .control {
 	display: block;
 	position: relative;
@@ -582,8 +610,9 @@ $font-style: normal;
   letter-spacing: 0.15px;
 
   &_all {
+    align-self: self-end;
     top: 10px;
-    right: 46px;
+    right: 34px;
     margin: 0;
   }
 
@@ -620,7 +649,7 @@ $font-style: normal;
 
   &_all {
     top: -4px;
-    left: 160px;
+    left: 148px;
   }
 
 	&:after {
@@ -694,7 +723,6 @@ $font-style: normal;
     }
 
     &__row-column {
-      flex-direction: column;
       gap: 16px;
     }
 
@@ -771,7 +799,7 @@ $font-style: normal;
 
     &__menu {
       width: 100%;
-      height: 180px;
+      height: 124px;
       position: fixed;
       top: 0;
       right: 0;
@@ -904,23 +932,10 @@ $font-style: normal;
 
   //------------------------------Users-----------------------------//
   .users {
-    &__label {
-      font-weight: 500;
-      font-size: $fs-small;
-      line-height: 1.71;
-      letter-spacing: 0.1px;
-    }
-
     &__input {
       height: 36px;
+      padding-left: 4px;
       box-sizing: border-box;
-
-      &::placeholder {
-        font-weight: 400;
-        font-size: $fs-small;
-        line-height: 1.43;
-        letter-spacing: 0.25px;
-      }
     }
 
     &__username {
@@ -928,6 +943,18 @@ $font-style: normal;
       font-size: $fs-small;
       line-height: 1.71;
       letter-spacing: 0.1px;
+    }
+
+    &__row {
+      gap: 8px;
+    }
+
+    &__row-column {
+      gap: 16px;
+    }
+
+    &__avatar {
+      margin-right: 0;
     }
   }
 
@@ -948,7 +975,7 @@ $font-style: normal;
     &_all {
       top: -1px;
       right: 0;
-      margin-left: 180px;
+      left: 128px;
     }
   }
 
@@ -964,11 +991,6 @@ $font-style: normal;
   }
 
   .subtitle {
-    font-weight: 400;
-    font-size: $fs-text;
-    line-height: 1.5;
-    color: $black-brown;
-
     &__mobile {
       font-size: $fs-small;
       line-height: 1.71;

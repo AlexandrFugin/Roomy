@@ -127,6 +127,7 @@
 .card__title {
   padding: 4px 16px;
   background: #673AB7;
+  opacity: 0.5;
   border-radius: 4px 4px 0px 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -140,7 +141,7 @@
   width: 100%;
 }
 .card__description {
-  padding: 6px 16px;
+  padding: 8px 16px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -150,7 +151,7 @@
   color: #000000;
 }
 .card__groups {
-  padding: 6px 0 18px 0;
+  padding: 6px 0 8px 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -162,7 +163,7 @@
 .card__groups__pers {
   position: relative;
   padding: 5px 16px 0 48px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 .card__groups__pers::before {
   content: url(./assets/svg/icon_groups.svg);
@@ -191,7 +192,7 @@
   cursor: pointer;
   display: block;
   margin: auto;
-  padding: 10px 16px;
+  padding: 10px 61px;
   background: #673AB7;
   border: none;
   border-radius: 2px;
@@ -368,6 +369,7 @@
   cursor: pointer;
   display: block;
   padding: 10px 48px 10px 16px;
+  width: 228px;
   position: relative;
   margin-bottom: 16px;
   background: #673AB7;
@@ -386,11 +388,12 @@
 .rooms__btn::after {
   content: "";
   position: absolute;
-  right: 17px;
+  right: 20px;
   margin: 0 auto;
 }
 .rooms__btn_group::after {
   content: url(./assets/svg/icon_groups-white.svg);
+  right: 31px;
 }
 .rooms__btn_admins::after {
   content: url(./assets/svg/icon_psychology-white.svg);
@@ -472,17 +475,22 @@
 }
 .users__form-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .users__row {
   display: flex;
   align-items: center;
+  align-self: flex-end;
   justify-content: space-between;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .users__row_mb8 {
   margin-bottom: 4px;
+}
+.users__row_mb10 {
+  margin-bottom: 10px;
 }
 .users__label {
   margin-bottom: 8px;
@@ -491,28 +499,27 @@
   color: #212121;
 }
 .users__label_user {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .users__input {
-  height: 44px;
-  padding-left: 8px;
+  height: 32px;
+  padding-left: 16px;
   border: 1px solid #9F9F9F;
   border-radius: 4px;
 }
 .users__input::placeholder {
   font-family: "Roboto";
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
   color: #9F9F9F;
 }
 .users__input_push {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 .users__input_user {
-  width: 478px;
   height: 32px;
-  margin-right: 24px;
+  margin-bottom: 15px;
 }
 .users__button {
   cursor: pointer;
@@ -536,6 +543,21 @@
   color: #212121;
 }
 
+.autorization {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 484px;
+  margin: 0 auto;
+  padding: 0 16px;
+  transform: translateY(77%);
+}
+.autorization__button {
+  width: 89px;
+  margin-left: auto;
+}
+
 .control {
   display: block;
   position: relative;
@@ -545,8 +567,9 @@
   letter-spacing: 0.15px;
 }
 .control_all {
+  align-self: self-end;
   top: 10px;
-  right: 46px;
+  right: 34px;
   margin: 0;
 }
 .control input {
@@ -576,7 +599,7 @@
 }
 .control-indicator_all {
   top: -4px;
-  left: 160px;
+  left: 148px;
 }
 .control-indicator:after {
   content: "";
@@ -627,7 +650,6 @@
     gap: 8px;
   }
   .users__row-column {
-    flex-direction: column;
     gap: 16px;
   }
   .users__input_user {
@@ -689,7 +711,7 @@
   }
   .header__menu {
     width: 100%;
-    height: 180px;
+    height: 124px;
     position: fixed;
     top: 0;
     right: 0;
@@ -794,27 +816,25 @@
   .line_mb18 {
     margin-top: 17px;
   }
-  .users__label {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.1px;
-  }
   .users__input {
     height: 36px;
+    padding-left: 4px;
     box-sizing: border-box;
-  }
-  .users__input::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.25px;
   }
   .users__username {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.1px;
+  }
+  .users__row {
+    gap: 8px;
+  }
+  .users__row-column {
+    gap: 16px;
+  }
+  .users__avatar {
+    margin-right: 0;
   }
   .control_all {
     top: 3px;
@@ -830,19 +850,13 @@
   .control-indicator_all {
     top: -1px;
     right: 0;
-    margin-left: 180px;
+    left: 128px;
   }
   .control-checkbox .control-indicator:after {
     top: 1px;
     width: 4px;
     height: 10px;
     border-width: 0 2px 2px 0;
-  }
-  .subtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #212121;
   }
   .subtitle__mobile {
     font-size: 14px;
